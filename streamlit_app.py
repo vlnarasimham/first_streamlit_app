@@ -1,2 +1,2 @@
- import streamlit;
- streamlit.title('This is Nar'); 
+import streamlit
+streamlit.title('This is Nar')
