@@ -16,7 +16,7 @@ streamlit.dataframe(fruits_to_show)
 
 
 import snowflake.connector
-streamlit.text('tested snowflake connector')
+streamlit.text('new test')
 
 
 
