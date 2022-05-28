@@ -22,7 +22,7 @@ streamlit.text('new test')
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 
-my_cur = mycnx.cursor()
+my_cur = my_cnx.cursor()
 
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 
