@@ -32,7 +32,7 @@ streamlit.text("Hello from Snowflake:")
 
 streamlit.text(my_data_row)
 
-my_cur.exeute("select *from garden_plants.veggies.lu_soil_type")
+my_cur.execute("select *from garden_plants.veggies.lu_soil_type")
 my_data_row = my_cur.fetchfive() 
 streamlit.text(my_data_row)
 
