@@ -1,6 +1,6 @@
 import streamlit
 import pandas 
-import snowflake.connector 
+
 
 streamlit.title('Nar is learning Streamlit')
 streamlit.header ('Nar is enjoying Streamlit') 
@@ -14,6 +14,7 @@ fruits_selected = streamlit.multiselect("Pick some fruits:",  list(my_fruit_list
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
+import snowflake.connector 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = mycnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
